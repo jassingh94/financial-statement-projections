@@ -6,7 +6,7 @@ Welcome to the **Financial Statement Processor**! This tool is designed to read 
 
 Before you start, make sure you have the following:
 
-1. **Input Excel File**: Save your financial statement Excel file in the project directory with the filename `Financial Projections.xlsx`.
+1. **Input Excel File**: Save your financial statement Excel file in the project directory with the filename `Financial Projections.xlsx` and sheet name as `Sheet1`.
 2. **Node.js**: Ensure you have Node.js installed on your system.
 
 ## Steps to Start the Service
@@ -116,14 +116,19 @@ curl --location 'http://localhost:8080/processNClean' \
 ### Scenarios
 
 1. **Multiple Historical Columns**: The parser handles multiple columns of historical data. It identifies the most recent historical data to apply updated projections.
+
 <img width="437" alt="image" src="https://github.com/user-attachments/assets/97a1d2f6-5bf8-4852-a008-26de87608184">
+
 2. **Comment Handling**: Comments placed in intermediate columns are ignored. However, ensure comments do not interfere with field names or data alignment, as the parser assumes comments are irrelevant to the data extraction process.
+
 <img width="495" alt="image" src="https://github.com/user-attachments/assets/3fafc721-3c45-45d2-9e4e-8b30dac9439a">
 
 3. **Incorrect Totals**: The tool corrects minor errors in totals by auto-calculating them based on preceding fields. If totals are incorrect, the tool uses logical calculations to correct them, maintaining the integrity of the final output.
+
 <img width="410" alt="image" src="https://github.com/user-attachments/assets/9c950005-8bb0-47c6-b883-68d8f8d9f88c">
 
 4. **Updating % for Fields**: You can update projection percentages for specific fields using the `projectionFieldInterests` in the API request. The tool applies these updates to the most recent projection data and generates a clean output reflecting the new projections.(Note: Adding auto calculated fields to projectionFieldInterests would not affect the sheet, as those are auto-calculated on the fly).
+
 <img width="158" alt="image" src="https://github.com/user-attachments/assets/c127a62a-35b2-48be-8a3c-593b2bc8a553">
 
 Clean excle created for all above scenarios : 
