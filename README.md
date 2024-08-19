@@ -14,7 +14,7 @@ Before you start, make sure you have the following:
 1. Ensure that the Excel file `Financial Projections.xlsx` is in the project directory.
 2. Install the required dependencies with `npm install`.
 3. Compile TypeScript code using `tsc`.
-4. Start the service using `node index.js`.
+4. Start the service using `node dist/index.js`.
 5. Use the API endpoint to submit your projection updates.
 6. Check the project directory for the cleaned Excel file named `cleanFinancialStatement.xlsx`.
 
@@ -38,7 +38,7 @@ Before you start, make sure you have the following:
 4. **Start the Service**:
    Start the service using Node.js with the command:
    ```sh
-   node index.js
+   node dist/index.js
    ```
 
 5. **Execute the API**:
