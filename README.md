@@ -9,6 +9,15 @@ Before you start, make sure you have the following:
 1. **Input Excel File**: Save your financial statement Excel file in the project directory with the filename `Financial Projections.xlsx` and sheet name as `Sheet1`.
 2. **Node.js**: Ensure you have Node.js installed on your system.
 
+## Getting Started
+
+1. Ensure that the Excel file `Financial Projections.xlsx` is in the project directory.
+2. Install the required dependencies with `npm install`.
+3. Compile TypeScript code using `tsc`.
+4. Start the service using `node index.js`.
+5. Use the API endpoint to submit your projection updates.
+6. Check the project directory for the cleaned Excel file named `cleanFinancialStatement.xlsx`.
+
 ## Steps to Start the Service
 
 1. **Install Dependencies**:
@@ -21,7 +30,7 @@ Before you start, make sure you have the following:
    Place your financial statement Excel file in the project directory with the filename `Financial Projections.xlsx`.
 
 3. **Compile TypeScript**:
-   If the project uses TypeScript, compile it by running:
+   Project uses `TypeScript`, compile it by running:
    ```sh
    tsc
    ```
@@ -33,7 +42,7 @@ Before you start, make sure you have the following:
    ```
 
 5. **Execute the API**:
-   Once the service is running, you can execute the API to process and clean the financial data.
+   Once the service is running, you can execute the API to process and clean and process the financial data.
 
 ## How It Works
 
@@ -134,15 +143,5 @@ curl --location 'http://localhost:8080/processNClean' \
 Clean excle created for all above scenarios : 
 
 <img width="478" alt="image" src="https://github.com/user-attachments/assets/941cd5c1-a865-445e-980b-f45b77639e30">
-
-
-## Getting Started
-
-1. Ensure that the Excel file `Financial Projections.xlsx` is in the project directory.
-2. Install the required dependencies with `npm install`.
-3. Compile TypeScript code (if applicable) using `tsc`.
-4. Start the service using `node index.js`.
-5. Use the API endpoint to submit your projection updates.
-6. Check the project directory for the cleaned Excel file named `cleanFinancialStatement.xlsx`.
 
 Happy processing! 🚀
