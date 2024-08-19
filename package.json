@@ -1,0 +1,21 @@
+{
+  "name": "financial-statement-projections",
+  "version": "1.0.0",
+  "description": "Decodes a provided financial statement and builds up on the provided data",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "xlsx": "^0.18.5",
+    "@types/express": "^4.17.21"
+  }
+}
